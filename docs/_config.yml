@@ -30,7 +30,7 @@ twitter_username: brinkhoff98
 github_username:  brinkhoff98
 
 # Build settings
-theme: minima
+theme: jekyll-theme-hacker
 plugins:
   - jekyll-feed
 
