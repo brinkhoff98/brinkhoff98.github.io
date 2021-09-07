@@ -4,26 +4,7 @@ title:  "Blogg molnet"
 date:   2021-09-07 18:07:35 +0200
 categories: blogg
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
-Jekyll requires blog post files to be named according to the following format:
-
-`YEAR-MONTH-DAY-title.MARKUP`
-
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
-
-Jekyll also offers powerful support for code snippets:
-
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+Molnet är en slang för att man sparar/lagrar typ ett dokument eller en server över internetet. Istället för att ha en fysisk server eller ha dokumentet sparat på en hårdisk. En stor fördel med molnet är hur smidigt det är att dela saker med andra. Och också att det finns mindre chans att man förlorar data om ens dator till exempel går sönder. Det kan också oftast vara billigare att spara saker på molnet än att köpa fysiska hårddiskar eller servrar. Men det finns såklart också nackdelar med molnet för det första så måste man vara uppkopplad för att nå datan man har där. Och det kan bli väldigt dyrt i längden att ha massa lagring data i molnet.
+ 
+Sammanfattningen av min prisundersökning på tre stora hosting företagen är att dom var ganska lika i pris. Google var billigast på 504 dollar per år och sen kom Amazon med 552 dollar per år och sist var Azure med 648 dollar per år. Så dom ligger i samma prisklass iallafall. Om man verkligen vill spara lite pengar så är det nog bäst att hyra från något annat lite mindre företag till exempel CloudSigma vilket kostar så lite som 252 dollar om året.
