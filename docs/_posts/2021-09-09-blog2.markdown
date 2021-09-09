@@ -1,0 +1,21 @@
+---
+layout: post
+title:  "Blogg CL pipelines"
+date:   2021-09-09 17:04:25 +0200
+categories: blogg
+---
+
+# CL pipeline
+CL pipeline är när man automatiserar utrullning av mjukvara. Man kan sätta upp så koden byggs och testas automatiskt när man pushar upp det innan man deployar den. Det används för att underlätta för utvecklare och att snabbt få feedback om något går fel. Man kan sätta upp såna automatiseringar på flera olika ställen till exempel Github eller Azure DevOps.
+
+Jag har mest använt mig av Azure DevOps för att att automatisera flöden. Och där har jag använt mig av ganska standard flöden. Där koden först testas att bygga och om den går igenom det så provar den att gå igenom alla enhetstester och sen får man välja själv om man vill deploya bygget.
+
+
+## Beskrivning av ett enkelt GitHub action workflow
+Man kan till exempel sätta upp en YAML fil som bygger och testar alla upp pushade branches. Då specificerar man i filen vilka saker som ska installeras först och sen försöker utföra “jobs” där  den bygger och testar koden och om allt går bra. Ett sånt här flöde är väldigt lätt och sätta upp och underlättar mycket speciellt när man är många som jobbar med samma projekt. Det minskar buggar och spar tid.
+
+
+
+[CL pipeline](https://www.redhat.com/en/topics/devops/what-cicd-pipeline).
+
+[GitHub Actions](https://github.com/features/actions).
