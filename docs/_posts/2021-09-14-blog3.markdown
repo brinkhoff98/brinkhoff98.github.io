@@ -1,0 +1,35 @@
+---
+layout: post
+title:  "Blogg CL pipelines"
+date:   2021-09-14 16:21:52 +0200
+categories: blogg
+---
+
+# Docker
+För att använda docker för .net appar får man först installera Docker och .net. Sen var man tvungen att installera WSL2 kernel updatering och aktivera lite saker i “Windows features” typ Hyper-v och annat. Man måste även aktivera virtualisering i bios på datorn för att kunna köra Docker lokalt. Sen efter det var det bara att tuta och köra. Var så lätt som att skapa en Dockerfile och sen bygga och köra sin image. Gick väldigt snabbt och smidigt allt som allt.
+
+
+# Docker filen
+I filen så börjar jag först att välja att jag vill ha .Net sdk 5.0 och att den ska utgå från mappen “app”. Sen på andra stycket så väljer jag filen som ska kopieras och väljer den som slutar på “.csproj” och installera mina dependencies. På tredje stycket så kopierar den allt och bygget.
+I det sista stycket av text så väljer jag att jag vill ASP:net 3.1 och säger att min entrypoint är “SimpleWebHelloWorld.dll”.
+
+![DockerFile](./_site/assets/dockerfile.png)
+
+
+# GitHub pipeline
+Har använt mig av github pipelines för att bygga och pusha min image. Först deklarerar man vad den ska köras på. Sen sätter man upp byggaren och skriver sina inlogg helst på ett säkert sätt(dvs inte i klartext). Och efter det bygger den imagen och pushar ut den till GitHub registry om allt går bra. Se bild nedan för att se koden.
+
+![Pipeline](./_site/assets/pipeline.png)
+
+
+# GitHub Hemlisar
+Har använt mig av krypterade nycklar för att logga in på Github Container Registry. Var väldigt lätt och smidigt.
+
+
+[Docker](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/docker/building-net-docker-images?view=aspnetcore-5.0)
+
+[GitHub Build Push Action](https://github.com/docker/build-push-action)
+
+[GitHub Build pipelines](https://www.linkedin.com/pulse/simple-steps-build-cicd-pipeline-aspnet-core-github-actions-karim/)
+
+[GitHub Secrets](https://docs.github.com/en/actions/reference/encrypted-secrets)
