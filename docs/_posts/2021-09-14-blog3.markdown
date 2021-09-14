@@ -13,13 +13,13 @@ För att använda docker för .net appar får man först installera Docker och .
 I filen så börjar jag först att välja att jag vill ha .Net sdk 5.0 och att den ska utgå från mappen “app”. Sen på andra stycket så väljer jag filen som ska kopieras och väljer den som slutar på “.csproj” och installera mina dependencies. På tredje stycket så kopierar den allt och bygget.
 I det sista stycket av text så väljer jag att jag vill ASP:net 3.1 och säger att min entrypoint är “SimpleWebHelloWorld.dll”.
 
-![DockerFile](dockerfile.png)
+![DockerFile](https://github.com/brinkhoff98/brinkhoff98.github.io/blob/e11954f880a68306fe309d1756048b98711c5224/docs/_posts/dockerfile.png)
 
 
 # GitHub pipeline
 Har använt mig av github pipelines för att bygga och pusha min image. Först deklarerar man vad den ska köras på. Sen sätter man upp byggaren och skriver sina inlogg helst på ett säkert sätt(dvs inte i klartext). Och efter det bygger den imagen och pushar ut den till GitHub registry om allt går bra. Se bild nedan för att se koden.
 
-![Pipeline](pipeline.png)
+![Pipeline](https://github.com/brinkhoff98/brinkhoff98.github.io/blob/e11954f880a68306fe309d1756048b98711c5224/docs/_posts/pipeline.png)
 
 
 # GitHub Hemlisar
