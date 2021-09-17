@@ -31,10 +31,10 @@ Har testat API:et lokalt och i azure med hjälp av Postman. Det är ett program 
 # Säkerhet
 Har använt mig av Azure keys och satt så bara folk som skickar med min admin nyckel får använda API:et. Vilket funkar bra så länge man bara ska använda API:et privat eller av få. Eftersom om andra ska använda API:et så måste dom få Admin nyckeln vilket man helst inte ska dela ut på grund av säkerhetsrisker.
 
-![Azure-](https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview)
+[Azure-](https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview)
 
-![DockerFil](https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-http-webhook-trigger?tabs=csharp)
+[DockerFil](https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-http-webhook-trigger?tabs=csharp)
 
-![Http Trigger Azure Function Visual Studio](https://www.c-sharpcorner.com/article/how-to-create-an-http-trigger-azure-function-app-using-visual-studio-20172/)
+[Http Trigger Azure Function Visual Studio](https://www.c-sharpcorner.com/article/how-to-create-an-http-trigger-azure-function-app-using-visual-studio-20172/)
 
-![Postman](https://www.postman.com/)
+[Postman](https://www.postman.com/)
