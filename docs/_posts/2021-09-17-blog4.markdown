@@ -13,19 +13,19 @@ FaaS det är en kategori för molnbaserade server leverantörer platformer, någ
 # Kalkylator 
 Koden till kalkylatorn är väldigt simpel och enkel. Man skickar in två variabler i httprequest som man sen läser av och kollar så dom bara innehåller siffror. Innan man sen adder ihop talen och skickar tillbaka resultatet. 
 
-![DockerFile](https://raw.githubusercontent.com/brinkhoff98/brinkhoff98.github.io/main/docs/_posts/dockerfile.png)
+![DockerFile](https://raw.githubusercontent.com/brinkhoff98/brinkhoff98.github.io/main/docs/_posts/kalkylator.png)
 
 
 # Azure funktion
 Tog och skapade funktionen från Visual studio mallar. Det var bra då fick man massa kod gratis och kunde snabbt publicera den snabbt till ens azure konto. Var också väldigt lätt att testa API:et lokalt när man använde sig av Visual studio och Postman.
 
-![DockerFile](https://raw.githubusercontent.com/brinkhoff98/brinkhoff98.github.io/main/docs/_posts/dockerfile.png)
+![DockerFile](https://raw.githubusercontent.com/brinkhoff98/brinkhoff98.github.io/main/docs/_posts/azure-funktion.png)
 
 
 # Testning
 Har testat API:et lokalt och i azure med hjälp av Postman. Det är ett program som man använder för att testa API:er mestadels och man kan testa att skicka in request med den, vilket jag använde för att testa API:et.
 
-![DockerFile](https://raw.githubusercontent.com/brinkhoff98/brinkhoff98.github.io/main/docs/_posts/dockerfile.png)
+![Postman](https://raw.githubusercontent.com/brinkhoff98/brinkhoff98.github.io/main/docs/_posts/postman.png)
 
 
 # Säkerhet
