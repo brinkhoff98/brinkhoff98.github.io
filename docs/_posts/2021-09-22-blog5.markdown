@@ -1,0 +1,31 @@
+---
+layout: post
+title:  "Databaser i molnet"
+date:   2021-09-22 15:23:03 +0200
+categories: blogg
+---
+
+# Koden
+Api:et tar just nu bara emot ett förnamn och efternamn som den lägger i databasen som man sen kan anropa för att plocka ut alla namn. Databasen är extremt simpel den innehåller bara två kolumner “lastname” och “firstname”.
+
+![kod](https://raw.githubusercontent.com/brinkhoff98/brinkhoff98.github.io/main/docs/_posts/apikod.png)
+
+# Azure
+Var absolut inga problem att få det att lira i Azure. Det var bara att skapa en SQL databas i Azure och skapa/publisha Azure funktionen i visual studio. Är väldigt snabbt och smidigt att använda Microsofts verktyg och mallar. Testade API:et lokalt och i molnet och det funkade bra var inga svårigheter.
+
+![test api post](https://raw.githubusercontent.com/brinkhoff98/brinkhoff98.github.io/main/docs/_posts/testpostapi.png)
+
+![test api get](https://raw.githubusercontent.com/brinkhoff98/brinkhoff98.github.io/main/docs/_posts/testgetapi.png)
+
+# Underhåll
+Är väldigt lätt att underhålla en sån här api och databas eftersom dom sköter sig själva och man kan lätta skala upp dom. Och man kan utan några större hinder ändra databasens struktur med lite SQL och jobb.
+Är också väldigt billigt att använda en serverless lösning. Min ligger på cirka 12 kronor i månaden eftersom jag tog det billigaste som fanns. Men om man sätter upp en server som är gjord för lite mer användare kan man ligga runt kanske 2000 kronor i månaden. Då räknade jag med att man behövde mer lagringskapacitet och att server skulle vara igång halva tiden av dygnet. 
+
+
+[Azure-](https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview)
+
+[Database](https://docs.microsoft.com/en-us/azure/azure-sql/database/single-database-create-quickstart?tabs=azure-portal)
+
+[Http Trigger Azure Function Visual Studio](https://www.c-sharpcorner.com/article/how-to-create-an-http-trigger-azure-function-app-using-visual-studio-20172/)
+
+[Postman](https://www.postman.com/)
