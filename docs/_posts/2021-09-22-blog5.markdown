@@ -15,8 +15,6 @@ Var absolut inga problem att få det att lira i Azure. Det var bara att skapa en
 
 ![test api post](https://raw.githubusercontent.com/brinkhoff98/brinkhoff98.github.io/main/docs/_posts/testpostapi.png)
 
-![test api get](https://raw.githubusercontent.com/brinkhoff98/brinkhoff98.github.io/main/docs/_posts/testgetapi.png)
-
 # Underhåll
 Är väldigt lätt att underhålla en sån här api och databas eftersom dom sköter sig själva och man kan lätta skala upp dom. Och man kan utan några större hinder ändra databasens struktur med lite SQL och jobb.
 Är också väldigt billigt att använda en serverless lösning. Min ligger på cirka 12 kronor i månaden eftersom jag tog det billigaste som fanns. Men om man sätter upp en server som är gjord för lite mer användare kan man ligga runt kanske 2000 kronor i månaden. Då räknade jag med att man behövde mer lagringskapacitet och att server skulle vara igång halva tiden av dygnet. 
