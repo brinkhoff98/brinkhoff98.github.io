@@ -1,0 +1,32 @@
+---
+layout: post
+title:  "Webbapplikationer i molnet"
+date:   2021-09-23 15:23:03 +0200
+categories: blogg
+---
+
+# Applikationen
+Med den här applikationen kan du snabbt och smidigt skicka in namn i en databas och sen hämta ut alla namn som ligger där. Är otroligt användbar i många situationer det ändå som stoppar än är ens fantasi.
+
+
+# Koden
+Koden är väldigt simpel innehåller bara två funktioner en som skickar data till databasen och en som hämtar data från databasen. Finns inte mycket mer man kan säga om den förutom att den funkar helt utmärkt för sitt syfte.
+
+![kod](https://raw.githubusercontent.com/brinkhoff98/brinkhoff98.github.io/main/docs/_posts/razorkod.png)
+
+
+# Azure
+Tog och publicerade applikationen från visual studio var otroligt smidigt och lätt tog typ lika lång tid som att värma upp en Billy’s pan pizza. Dvs cirka två minuter totalt sen så var gossen uppe och rullade på internetet.
+
+![applikationen](https://raw.githubusercontent.com/brinkhoff98/brinkhoff98.github.io/main/docs/_posts/hemsida.png)
+
+
+# Pris
+Kostar hela 0 riksdaler att ha den här fina applikationen i azure, ett riktigt kap får jag nog säga. Men om man skulle ha en applikationen som faktiskt folk använder så säger Azure att det ska kosta 640 riksdaler i månaden. Det är vad notan ligger på enligt dom för en vanlig Azure web applikationen för produktion. 
+
+
+[Azure-](https://razorpagesskola20210923170152.azurewebsites.net/?)
+
+[Azure-](https://docs.microsoft.com/en-US/visualstudio/deployment/quickstart-deploy-to-azure?view=vs-2019)
+
+[Azure-](https://code.visualstudio.com/docs/containers/app-service)
