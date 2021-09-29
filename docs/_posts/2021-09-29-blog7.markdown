@@ -1,0 +1,21 @@
+---
+layout: post
+title:  "Brev till CTO"
+date:   2021-09-29 15:23:03 +0200
+categories: blogg
+---
+
+# Brev till CTO
+Kära CTO tycker du ska tänka över ditt beslut om molnlagring och vår nuvarande nätverk. Att använda internet för sånt här är lite mer riskabelt men inte tillräckligt för att motstå molnets fördelar. Att koppla upp våra system och applikationer till internetet och molnet är absolut inget farligt speciellt inte om man använder sig av säkerhetsprinciper som också är lätta att sätta upp.
+
+Vi kan använda oss av Azures strålande produkter Azure Private Link och Azure Service Bus för att få ett otroligt pålitligt och säkert nätverk. Med Azure Service Bus kan man tryggt och säkert skicka över data. Och med Azure Private Link kan vi sätta upp ett VPC(Virtual Private Cloud) så vår data och nätverk inte ligger helt öppet. Med bara dom två teknikerna så har vi en stabil grund för att bygga vårt framtida nätverk.
+
+Var snäll tänk om, annars….
+
+Mvh Rickard Brinkhoff
+
+
+
+[Azure Private Link](https://docs.microsoft.com/en-us/azure/private-link/private-link-overview)
+
+[Azure Service Bus](https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview)
