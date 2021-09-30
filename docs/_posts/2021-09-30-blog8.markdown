@@ -1,0 +1,37 @@
+---
+layout: post
+title:  "Brev till CTO"
+date:   2021-09-29 15:23:03 +0200
+categories: blogg
+---
+
+# Applikationen
+Min applikation skickar upp en vald bild till Azure Storage Account. Bilden omvandlas till en blob och skickas över och hamnar i molnet på mitt Azure Storage Account.
+
+![Blob diagram](https://raw.githubusercontent.com/brinkhoff98/brinkhoff98.github.io/main/docs/_posts/blobdiagram.PNG)
+
+![konsol](https://raw.githubusercontent.com/brinkhoff98/brinkhoff98.github.io/main/docs/_posts/dotnetrun.PNG)
+
+
+# Koden
+Först så hämtar programmet min connectionstring till min Azure Storage Account. Sen efter det så skapar den upp en container client där bilden hamnar sen upp under mitt konto. Efter det så specificerar jag vilken fil jag ska skicka upp och vart den ligger och omvandlar filen till en blob. Och slutligen så skickar jag iväg min blob till Azure och skriver ut webbadressen till bilden i molnet.
+
+![kod](https://raw.githubusercontent.com/brinkhoff98/brinkhoff98.github.io/main/docs/_posts/blobkod.PNG)
+
+
+# Kostnad 
+Cirka $690.60 skulle det kosta att ha ett tusen aktiva användare varje dag som laddar ner och upp bilder. Hur mycket data man skickar över verkar inte påverka priset, Det som kostar är datalagringen och requestsen.
+
+
+# Säkerhet
+Om man inte ändrar på några inställningar så är allt man skickar upp till Azure Blob  Storage krypterat, Och man kan bara komma åt det om man är inloggad. Så säkerheten på filer där är ganska höga så man behöver inte oroa sig så länge man hanterar sina nycklar och connectionstrings bra.
+
+![azure blob](https://raw.githubusercontent.com/brinkhoff98/brinkhoff98.github.io/main/docs/_posts/blob.PNG)
+
+
+[Azure Blob Storage](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-dotnet)
+
+[Min bild i Azure](https://skit1337.blob.core.windows.net/quickstartblobs8ac881b1-9208-4126-8fd1-514957cb7bfe/sonic.jpg)
+
+[Azure Blob Säkerhet](https://cloudacademy.com/blog/how-does-azure-encrypt-data/)
+
