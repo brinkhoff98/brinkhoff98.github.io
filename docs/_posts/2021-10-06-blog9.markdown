@@ -1,0 +1,47 @@
+---
+layout: post
+title:  "Webbapplikationer i molnet"
+date:   2021-09-23 15:23:03 +0200
+categories: blogg
+---
+
+# Applikationen
+Med den här applikationen kan du snabbt och smidigt skicka in namn i en databas och sen hämta ut alla namn som ligger där. Är otroligt användbar i många situationer det ändå som stoppar än är ens fantasi.
+
+
+# Koden
+Koden är väldigt simpel innehåller bara två funktioner en som skickar data till databasen och en som hämtar data från databasen. Finns inte mycket mer man kan säga om den förutom att den funkar helt utmärkt för sitt syfte. Så är typ bara dom två anropen till databasen som det blir någon vettig loggning från.
+
+![kod](https://raw.githubusercontent.com/brinkhoff98/brinkhoff98.github.io/main/docs/_posts/razorkod.PNG)
+
+# logging
+Loggning är extremt värdefullt för dom flesta applikationer. Med hjälp av det kan man lätt hitta fel och saker som funkar mindre optimalt. Om man har vettig loggning så kan man snabbare hitta säkerhetsrisker också. Finns inte mycket nackdelar med att lägga till loggning till ens applikation.
+
+# Kusto 
+Tog och publicerade applikationen från visual studio var otroligt smidigt och lätt tog typ lika lång tid som att värma upp en Billy’s pan pizza. Dvs cirka två minuter totalt sen så var gossen uppe och rullade på internetet.
+
+Visar statiskt för hur lång tid olika requests tar. Användbart för att se om systemet är överbelastat eller om det är några requests som tar ovanligt mycket tid.
+
+<pre><code>
+requests
+| summarize RequestsCount=sum(itemCount), AverageDuration=avg(duration), percentiles(duration, 50, 95, 99) by operation_Name 
+| order by RequestsCount desc 
+</code></pre>
+
+![Kusto](https://raw.githubusercontent.com/brinkhoff98/brinkhoff98.github.io/main/docs/_posts/avg-respons-time.PNG)
+
+<pre><code>
+requests
+| where success == false
+| summarize failedCount=sum(itemCount) by name
+| top 10 by failedCount desc
+</code></pre>
+
+Ser hur många requests som har misslyckats. Med hjälp av det kan man se till exempel om någon server ligger nere eller om det är något fel med nätet. Helst vill man ju att den här ska vissa noll i resultat.
+
+![Kusto](https://raw.githubusercontent.com/brinkhoff98/brinkhoff98.github.io/main/docs/_posts/failed-req.PNG)
+
+
+[Azure Monitor](https://docs.microsoft.com/en-us/azure/azure-monitor/app/asp-net-core)
+
+[Kusto query](https://docs.microsoft.com/en-us/azure/data-explorer/kusto/query/)
