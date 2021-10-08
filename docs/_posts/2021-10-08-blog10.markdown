@@ -1,0 +1,38 @@
+---
+layout: post
+title:  "Monitorering av molnapplikationer"
+date:   2021-10-08 15:23:03 +0200
+categories: blogg
+---
+
+# Horisontell skalning och vertikal skalning
+Horisontell skalning innebär att lägga till fler fysiska maskiner och resurser och därmed minska belastningen på varje maskin. Denna process innebär att man ökar antalet noder istället för att öka kapaciteten, belastningen delas mellan de gamla och nyligen tillagda maskinerna.
+Vertikal skalning innebär att man ökar prestandan på en redan befintliga maskin i  antingen CPU, RAM eller hdd storlek. 
+
+# Kostnad på olika skalning sätt
+När man skalar en app service horisontellt så betalar man för varje resurs man har gånger priset av en. DVs att om en resurs kostar 50$ så kostar två stycken 100$ o.s.v.
+Det blir mindre hopp mellan priserna om man väljer att skala vertikalt istället och verkar som att det är att föredra vertikal skalning för mindre maskiner/resurser.
+
+Ska man skala upp en virtuell maskin så är det samma principer som när man skalar en app service horisontellt eller vertikalt.
+
+
+# Hur man kan skala olika Azure Service App plans
+Free: funkar bara att skala horisontellt
+shared: funkar bara att skala horisontellt
+Basic: funkar att skala vertikalt och horisontellt
+Standard: funkar att skala vertikalt och horisontellt
+Premium: funkar att skala vertikalt och horisontellt
+Isolated: funkar att skala vertikalt och horisontellt
+
+
+![Load](https://raw.githubusercontent.com/brinkhoff98/brinkhoff98.github.io/main/docs/_posts/load.PNG)
+
+
+[Azure Monitor](https://mikhail.io/2019/07/load-testing-azure-functions-with-loaderio/)
+
+[Azure Monitor](https://loader.io/tests)
+
+[Azure Monitor](https://azure.microsoft.com/en-us/pricing/calculator/)
+
+
+
